@@ -21,6 +21,10 @@ include device/google/zuma/device-shipping-common.mk
 # Bionic
 PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := true
 
+# EUICC
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/permissions/permissions_com.google.android.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/permissions_com.google.android.euicc.xml
+
 # Fingerprint
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
