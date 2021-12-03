@@ -5,3 +5,5 @@
 #
 
 include $(DEVICE_PATH)/BoardConfig-calyx.mk
+
+include $(VENDOR_PATH)/BoardConfigVendor.mk
