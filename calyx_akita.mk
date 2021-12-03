@@ -18,3 +18,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/akita/akita:14/UD2A.240505.001/11628456:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+$(call inherit-product, vendor/google/akita/akita-vendor.mk)
