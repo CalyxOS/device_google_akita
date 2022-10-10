@@ -1,4 +1,5 @@
 # Inherit some common stuff.
+TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/calyx/config/common_phone.mk)
 
 # Inherit device configuration
