@@ -19,4 +19,4 @@ BUILD_FINGERPRINT := google/akita/akita:14/UD1A.230803.041/10808477:user/release
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-$(call inherit-product, vendor/google/akita/shiba-vendor.mk)
+$(call inherit-product, vendor/google/akita/akita-vendor.mk)

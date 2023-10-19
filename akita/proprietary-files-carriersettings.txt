@@ -39,6 +39,7 @@ product/etc/CarrierSettings/consumercellularatt_us.pb
 product/etc/CarrierSettings/consumercellulartmo_us.pb
 product/etc/CarrierSettings/coppervalley_us.pb
 product/etc/CarrierSettings/coriolis_fr.pb
+product/etc/CarrierSettings/cox_us.pb
 product/etc/CarrierSettings/cricket5g_us.pb
 product/etc/CarrierSettings/cricket_us.pb
 product/etc/CarrierSettings/cspire_nl.pb
