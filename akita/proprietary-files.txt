@@ -43,9 +43,6 @@ system_ext/priv-app/PixelQualifiedNetworksService/PixelQualifiedNetworksService.
 system_ext/priv-app/ShannonIms/ShannonIms.apk;PRESIGNED
 system_ext/priv-app/ShannonRcs/ShannonRcs.apk;PRESIGNED
 
-# Misc
-system_ext/lib64/libpowerstatshaldataprovider.so
-
 # Radio
 system_ext/etc/default-permissions/default-permissions-euiccpixel.xml
 system_ext/etc/permissions/com.google.android.rilextension.xml
