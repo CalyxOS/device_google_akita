@@ -17,6 +17,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/google/akita/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
 
+# Pixel Camera Services / Camera extensions
+PRODUCT_COPY_FILES += \
+    device/google/akita/permissions/permissions_com.google.android.apps.camera.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/permissions_com.google.android.apps.camera.services.xml
+
 TARGET_PREBUILT_KERNEL := device/google/akita-kernel/Image.lz4
 
 # wireless_charger HAL service
