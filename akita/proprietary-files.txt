@@ -56,7 +56,7 @@ system_ext/priv-app/EuiccSupportPixel-P23/esim-full-v1.img
 system_ext/priv-app/EuiccSupportPixel-P23/esim-full-v1-m40.img
 system_ext/priv-app/EuiccSupportPixel-P23/esim-full-v1-m41.img
 system_ext/priv-app/EuiccSupportPixelPermissions/EuiccSupportPixelPermissions.apk;PRESIGNED
-system_ext/priv-app/ril-extension/ril-extension.apk
+system_ext/priv-app/ril-extension/ril-extension.apk;PRESIGNED
 
 # RIL
 system_ext/app/OemRilHookService/OemRilHookService.apk
