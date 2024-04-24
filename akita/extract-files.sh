@@ -53,6 +53,14 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/etc/init/init.modem_logging_control.rc)
+            sed -i 's/ && property:ro.debuggable=0//' "${2}"
+            ;;
+    esac
+}
+
 function prepare_firmware() {
     if [ "${SRC}" != "adb" ]; then
         bash "${ANDROID_ROOT}"/calyx/scripts/pixel/prepare-firmware.sh "${DEVICE}" "${SRC}"
