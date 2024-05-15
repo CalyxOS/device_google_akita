@@ -259,7 +259,7 @@ vendor/etc/vintf/manifest/dmd.xml
 vendor/etc/vintf/manifest/fingerprint-goodix.xml
 vendor/etc/vintf/manifest/manifest_input.processor-service.xml
 vendor/etc/vintf/manifest/manifest_radioext.xml
-vendor/etc/vintf/manifest/manifest_wifi_ext_aidl.xml
+vendor/etc/vintf/manifest/manifest_wifi_ext_aidl.xml|6c411f5a63ebc252698fc880d8813ca8c9c63d9c
 vendor/etc/vintf/manifest/pixel-gnss-default.xml
 vendor/etc/vintf/manifest/vendor.google.edgetpu_vendor_service@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.google.google_battery-default.xml
