@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=shiba
+DEVICE=akita
 VENDOR=google
 
 # Load extract_utils and do some sanity checks
