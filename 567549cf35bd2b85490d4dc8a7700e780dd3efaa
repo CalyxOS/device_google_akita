@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c706349_ad6b2a4f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2024-05-15T19:14:26Z",
+      "side": 1,
+      "message": "This isn\u0027t needed, we are shipping this device with displayport on by default",
+      "revId": "567549cf35bd2b85490d4dc8a7700e780dd3efaa",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
