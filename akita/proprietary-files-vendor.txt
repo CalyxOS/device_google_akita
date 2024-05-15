@@ -1464,6 +1464,8 @@ vendor/lib64/libmodem_svc_proto.so
 vendor/lib64/libnos_citadeld_proxy.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/liboemservice.so
+vendor/lib64/libprotobuf-cpp-full-21.7.so
+vendor/lib64/libprotobuf-cpp-lite-21.7.so
 vendor/lib64/libproxy_trusty.so
 vendor/lib64/libril-aidl.so
 vendor/lib64/libril_gfeature.so
