@@ -56,6 +56,7 @@ product/etc/CarrierSettings/default.pb
 product/etc/CarrierSettings/digi_hu.pb
 product/etc/CarrierSettings/digi_my.pb
 product/etc/CarrierSettings/digi_ro.pb
+product/etc/CarrierSettings/digimobil_es.pb
 product/etc/CarrierSettings/dishatt_us.pb
 product/etc/CarrierSettings/dito_ph.pb
 product/etc/CarrierSettings/dna_fi.pb
@@ -89,6 +90,7 @@ product/etc/CarrierSettings/freedommobile_ca.pb
 product/etc/CarrierSettings/gamma_gb.pb
 product/etc/CarrierSettings/gci_us.pb
 product/etc/CarrierSettings/gibtel_gi.pb
+product/etc/CarrierSettings/giffgaff_gb.pb
 product/etc/CarrierSettings/giga_sg.pb
 product/etc/CarrierSettings/globe_ph.pb
 product/etc/CarrierSettings/h3_at.pb
@@ -112,6 +114,7 @@ product/etc/CarrierSettings/kpn_nl.pb
 product/etc/CarrierSettings/liberty_pr.pb
 product/etc/CarrierSettings/linemo_jp.pb
 product/etc/CarrierSettings/lmt_lv.pb
+product/etc/CarrierSettings/lowi_es.pb
 product/etc/CarrierSettings/luckymobile_ca.pb
 product/etc/CarrierSettings/m1_sg.pb
 product/etc/CarrierSettings/manxcontract_im.pb
@@ -193,6 +196,7 @@ product/etc/CarrierSettings/sunrise_ch.pb
 product/etc/CarrierSettings/swisscom_ch.pb
 product/etc/CarrierSettings/swisscom_li.pb
 product/etc/CarrierSettings/talkmobile_gb.pb
+product/etc/CarrierSettings/tango_lu.pb
 product/etc/CarrierSettings/tango_us.pb
 product/etc/CarrierSettings/tbaytel_ca.pb
 product/etc/CarrierSettings/tchibo_de.pb
@@ -239,6 +243,7 @@ product/etc/CarrierSettings/tstar_tw.pb
 product/etc/CarrierSettings/twm_tw.pb
 product/etc/CarrierSettings/u264a_ca.pb
 product/etc/CarrierSettings/u264a_us.pb
+product/etc/CarrierSettings/u264ab_ca.pb
 product/etc/CarrierSettings/u264ao_at.pb
 product/etc/CarrierSettings/u264ap_at.pb
 product/etc/CarrierSettings/ultra_us.pb

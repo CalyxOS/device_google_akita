@@ -26,7 +26,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libGralloc4Wrapper \
     libcamera2ndk_vendor \
     pixel-power-ext-V1-ndk.vendor
 
@@ -41,7 +40,6 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.0.vendor \
     libcodec2_hidl@1.1.vendor \
     libcodec2_hidl@1.2.vendor \
-    libcodec2_soft_common.vendor \
     libcodec2_vndk.vendor \
     libexynosutils \
     libexynosv4l2 \
@@ -56,6 +54,10 @@ PRODUCT_PACKAGES += \
     android.hardware.confirmationui-lib.trusty \
     android.hardware.confirmationui@1.0.vendor \
     libteeui_hal_support.vendor
+
+# Fingerprint
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # Graphics
 PRODUCT_PACKAGES += \
@@ -118,12 +120,22 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.frameworks.stats-V1-cpp.vendor \
     android.frameworks.stats-V1-ndk.vendor \
+    android.hardware.audio.common-V2-ndk.vendor \
     android.hardware.authsecret-V1-ndk.vendor \
     android.hardware.biometrics.common-V3-ndk.vendor \
     android.hardware.biometrics.face-V3-ndk.vendor \
     android.hardware.biometrics.face@1.0.vendor \
     android.hardware.biometrics.fingerprint-V3-ndk.vendor \
+    android.hardware.bluetooth.audio-V3-ndk.vendor \
     android.hardware.gnss-V3-ndk.vendor \
+    android.hardware.gnss.measurement_corrections@1.0.vendor \
+    android.hardware.gnss.measurement_corrections@1.1.vendor \
+    android.hardware.gnss.visibility_control@1.0.vendor \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.graphics.composer3-V2-ndk.vendor \
     android.hardware.health-V1-ndk.vendor \
     android.hardware.input.common-V1-ndk.vendor \
     android.hardware.input.processor-V1-ndk.vendor \
@@ -165,6 +177,7 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor \
     android.hardware.weaver-V2-ndk.vendor \
     android.hardware.wifi-V1-ndk.vendor \
+    android.media.audio.common.types-V2-ndk.vendor \
     com.google.hardware.pixel.display-V4-ndk.vendor \
     com.google.hardware.pixel.display-V9-ndk.vendor \
     hardware.google.ril_ext-V1-ndk.vendor
