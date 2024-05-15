@@ -2,7 +2,6 @@
 vendor/apex/com.google.android.widevine.apex
 vendor/apex/com.google.pixel.camera.hal.apex
 vendor/apex/com.google.pixel.euicc.update.apex
-vendor/apex/com.google.pixel.wifi.ext.apex
 vendor/bin/aocd
 vendor/bin/bipchmgr
 vendor/bin/cbd
@@ -255,7 +254,6 @@ vendor/etc/vintf/manifest/dmd.xml
 vendor/etc/vintf/manifest/fingerprint-goodix.xml
 vendor/etc/vintf/manifest/manifest_input.processor-service.xml
 vendor/etc/vintf/manifest/manifest_radioext.xml
-vendor/etc/vintf/manifest/manifest_wifi_ext_aidl.xml
 vendor/etc/vintf/manifest/pixel-gnss-default.xml
 vendor/etc/vintf/manifest/vendor.google.edgetpu_vendor_service@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.google.google_battery-default.xml
@@ -1517,7 +1515,6 @@ vendor/lib64/vendor.google.google_battery-V2-ndk.so
 vendor/lib64/vendor.google.radio_ext-V1-ndk.so
 vendor/lib64/vendor.google.whitechapel.audio.audioext@4.0.so
 vendor/lib64/vendor.google.whitechapel.audio.extension-V1-ndk.so
-vendor/lib64/vendor.google.wifi_ext-V1-ndk.so
 vendor/lib64/vendor.google.wireless_charger-V1-ndk.so
 vendor/lib64/vendor.radio.base.so
 vendor/lib64/vendor.radio.protocol.sit.base.so

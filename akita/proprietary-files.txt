@@ -66,3 +66,8 @@ system_ext/framework/oemrilhook.jar
 system_ext/lib64/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so
 system_ext/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so
 system_ext/priv-app/OemRilService/OemRilService.apk;PRESIGNED
+
+# vendor partition
+vendor/apex/com.google.pixel.wifi.ext.apex|8fa6078332de6346255f6d78b13f6a49ff6decb5
+vendor/etc/vintf/manifest/manifest_wifi_ext_aidl.xml|6c411f5a63ebc252698fc880d8813ca8c9c63d9c
+vendor/lib64/vendor.google.wifi_ext-V1-ndk.so|28b87dcccd1b79b4babc493fa7851536e11adf51
