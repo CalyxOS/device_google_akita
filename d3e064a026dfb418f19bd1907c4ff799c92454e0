@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85105cf2_0ea21936",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2024-05-15T19:13:22Z",
+      "side": 1,
+      "message": "I don\u0027t think 8a supports reverse charging",
+      "revId": "d3e064a026dfb418f19bd1907c4ff799c92454e0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
