@@ -727,8 +727,6 @@ VENDOR_SKIP_FILES=(
     "lib64/libpixelhealth.so"
     "lib64/libpixelmitigation.so"
     "lib64/libpixelstats.so"
-    "lib64/libprotobuf-cpp-full-21.7.so"
-    "lib64/libprotobuf-cpp-lite-21.7.so"
     "lib64/libreference-ril.so"
     "lib64/libril.so"
     "lib64/librilutils.so"
