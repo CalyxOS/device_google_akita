@@ -88,25 +88,6 @@ PRODUCT_PACKAGES += \
     android.hardware.identity-support-lib.vendor \
     android.hardware.identity_credential.xml
 
-# Nos
-PRODUCT_PACKAGES += \
-    lib_android_keymaster_keymint_utils.vendor \
-    libkeymaster4support.vendor \
-    libkeymint.vendor \
-    libkeymint_support.vendor \
-    libnos \
-    libnosprotos \
-    libnos_client_citadel \
-    libnos_datagram \
-    libnos_datagram_citadel \
-    libnos_feature \
-    libnos_transport \
-    nos_app_avb \
-    nos_app_identity \
-    nos_app_keymaster \
-    nos_app_weaver \
-    pixelpowerstats_provider_aidl_interface-cpp.vendor
-
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
