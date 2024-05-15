@@ -841,28 +841,6 @@ VENDOR_SKIP_FILES=(
     "lib64/libpuresoftkeymasterdevice.so"
     "lib64/libsoft_attestation_cert.so"
 
-    # Nos
-    "lib64/lib_android_keymaster_keymint_utils.so"
-    "lib64/libcppbor_external.so"
-    "lib64/libcppcose_rkp.so"
-    "lib64/libkeymaster4support.so"
-    "lib64/libkeymaster_messages.so"
-    "lib64/libkeymaster_portable.so"
-    "lib64/libkeymint.so"
-    "lib64/libkeymint_support.so"
-    "lib64/libnos.so"
-    "lib64/libnos_client_citadel.so"
-    "lib64/libnos_datagram.so"
-    "lib64/libnos_datagram_citadel.so"
-    "lib64/libnos_feature.so"
-    "lib64/libnos_transport.so"
-    "lib64/libnosprotos.so"
-    "lib64/nos_app_avb.so"
-    "lib64/nos_app_identity.so"
-    "lib64/nos_app_keymaster.so"
-    "lib64/nos_app_weaver.so"
-    "lib64/pixelpowerstats_provider_aidl_interface-cpp.so"
-
     # Sensors
     "lib64/android.frameworks.sensorservice@1.0.so"
     "lib64/hw/sensors.dynamic_sensor_hal.so"
