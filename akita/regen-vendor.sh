@@ -919,6 +919,7 @@ VENDOR_SKIP_FILES=(
     "lib64/hw/vulkan.mali.so"
     "lib64/hw/vendor.google.whitechapel.audio.audioext@4.0-impl.so"
     "lib64/vendor.google.whitechapel.audio.audioext@4.0.so"
+    "lib64/libdisplaycolor.so"
 )
 
 # Initialize the helper

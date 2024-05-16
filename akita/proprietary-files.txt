@@ -75,3 +75,4 @@ vendor/lib64/egl/libGLES_mali.so|9aecf40cc70224de431bb2a13f1f7c5b1d0320f1
 vendor/lib64/hw/vulkan.mali.so|17a6a2f4ff3a1cb48c24646b631904208030b20f
 vendor/lib64/hw/vendor.google.whitechapel.audio.audioext@4.0-impl.so|00efc4fd7aa23987d4c60a795d923becbb37ef51
 vendor/lib64/vendor.google.whitechapel.audio.audioext@4.0.so|3860da8fcf302bbd7f1a69775d9692e036e5ddb6
+vendor/lib64/libdisplaycolor.so|58293e89628d47c79b060675d3850e241b129d01
