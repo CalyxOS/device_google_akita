@@ -916,6 +916,8 @@ VENDOR_SKIP_FILES=(
     "apex/com.google.pixel.camera.hal.apex"
     "apex/com.google.pixel.wifi.ext.apex"
     "lib64/vendor.google.wifi_ext-V1-ndk.so"
+    "lib64/egl/libGLES_mali.so"
+    "lib64/hw/vulkan.mali.so"
 )
 
 # Initialize the helper

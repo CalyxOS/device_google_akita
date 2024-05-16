@@ -1374,7 +1374,6 @@ vendor/lib64/com.google.edgetpu_vendor_service-V2-ndk.so
 vendor/lib64/com.google.face.debug-V4-ndk.so
 vendor/lib64/com.google.hardware.biometrics.fingerprint.fingerprint-ext-V1-ndk.so
 vendor/lib64/com.google.input-V2-ndk.so
-vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/fake_gxp_telemetry_reader.so
 vendor/lib64/fp_utils.so
 vendor/lib64/gxp_metrics_logger.so
@@ -1383,7 +1382,6 @@ vendor/lib64/hw/audio.platform.aoc.so
 vendor/lib64/hw/audio.primary.zuma.so
 vendor/lib64/hw/sound_trigger.primary.zuma.so
 vendor/lib64/hw/vendor.google.whitechapel.audio.audioext@4.0-impl.so
-vendor/lib64/hw/vulkan.mali.so
 vendor/lib64/libAlgFx_HiFi3z.so
 vendor/lib64/libAlgFx_HiFi3z231114.so
 vendor/lib64/libExynosC2ComponentStore.so
