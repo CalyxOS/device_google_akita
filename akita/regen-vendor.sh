@@ -911,6 +911,11 @@ VENDOR_SKIP_FILES=(
 
     # Google
     "etc/default-permissions/default-permissions_talkback.xml"
+
+    # Shiba
+    "apex/com.google.pixel.camera.hal.apex"
+    "apex/com.google.pixel.wifi.ext.apex"
+    "lib64/vendor.google.wifi_ext-V1-ndk.so"
 )
 
 # Initialize the helper
