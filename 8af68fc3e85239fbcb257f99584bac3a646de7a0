@@ -22,6 +22,30 @@
       },
       "revId": "8af68fc3e85239fbcb257f99584bac3a646de7a0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4b880708_d5f2ae11",
+        "filename": "device-calyx.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-05-16T17:43:23Z",
+      "side": 1,
+      "message": "We aren\u0027t setting LOCAL_PATH here, it\u0027d end up relying on being set correctly wherever this is included (it\u0027s just a variable)\n\nThere\u0027s a bunch of other references too, we\u0027ll just deal with everything altogether later, all references, for all devices. for now let\u0027s just change it to akita.\n\nIt doesn\u0027t matter too much either given these files are all typically identical.",
+      "parentUuid": "681f663b_b7a329eb",
+      "range": {
+        "startLine": 5,
+        "startChar": 4,
+        "endLine": 5,
+        "endChar": 24
+      },
+      "revId": "8af68fc3e85239fbcb257f99584bac3a646de7a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
