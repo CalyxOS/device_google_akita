@@ -920,6 +920,13 @@ VENDOR_SKIP_FILES=(
     "lib64/hw/vendor.google.whitechapel.audio.audioext@4.0-impl.so"
     "lib64/vendor.google.whitechapel.audio.audioext@4.0.so"
     "lib64/libdisplaycolor.so"
+    "lib64/android.hardware.gnss.measurement_corrections@1.0.so"
+    "lib64/android.hardware.gnss.measurement_corrections@1.1.so"
+    "lib64/android.hardware.gnss.visibility_control@1.0.so"
+    "lib64/android.hardware.gnss@1.0.so"
+    "lib64/android.hardware.gnss@1.1.so"
+    "lib64/android.hardware.gnss@2.0.so"
+    "lib64/android.hardware.gnss@2.1.so"
 )
 
 # Initialize the helper
