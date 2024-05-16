@@ -70,6 +70,30 @@
       },
       "revId": "8af68fc3e85239fbcb257f99584bac3a646de7a0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49e9d4e7_9efe2e5a",
+        "filename": "device-calyx.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-05-16T17:53:40Z",
+      "side": 1,
+      "message": "And we are setting it: https://gitlab.com/CalyxOS/device_google_akita/-/blob/8af68fc3e85239fbcb257f99584bac3a646de7a0/Android.mk#L23\n\nExplains why build didn\u0027t still fail for me after doing this",
+      "parentUuid": "6c1f5515_a030e71d",
+      "range": {
+        "startLine": 5,
+        "startChar": 4,
+        "endLine": 5,
+        "endChar": 24
+      },
+      "revId": "8af68fc3e85239fbcb257f99584bac3a646de7a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
