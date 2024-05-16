@@ -14,6 +14,7 @@ vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux
 vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor
 vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging
 vendor/bin/hw/android.hardware.gnss-service.pixel
+vendor/bin/hw/android.hardware.graphics.allocator-V1-service
 vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging
 vendor/bin/hw/android.hardware.identity@1.0-service.citadel
 vendor/bin/hw/android.hardware.input.processor-service
@@ -171,6 +172,7 @@ vendor/etc/init/android.hardware.bluetooth-service.bcmbtlinux.rc
 vendor/etc/init/android.hardware.camera.provider@2.7-service-google-apex.rc
 vendor/etc/init/android.hardware.confirmationui-service.trusty.vendor.rc
 vendor/etc/init/android.hardware.edgetpu.logging@service-edgetpu-logging.rc
+vendor/etc/init/android.hardware.graphics.allocator-aidl-service.rc
 vendor/etc/init/android.hardware.gxp.logging@service-gxp-logging.rc
 vendor/etc/init/android.hardware.identity@1.0-service.citadel.rc
 vendor/etc/init/android.hardware.input.processor-service.rc
@@ -1348,6 +1350,12 @@ vendor/firmware/uecapconfig/WINDTRE.binarypb
 vendor/framework/com.google.android.camera.experimental2023.jar
 vendor/lib64/android.hardware.authsecret-impl.nos.so
 vendor/lib64/android.hardware.confirmationui.secure_input_citadel.so
+vendor/lib64/android.hardware.graphics.composer@2.1-resources.so
+vendor/lib64/android.hardware.graphics.composer@2.1.so
+vendor/lib64/android.hardware.graphics.composer@2.2-resources.so
+vendor/lib64/android.hardware.graphics.composer@2.2.so
+vendor/lib64/android.hardware.graphics.composer@2.3.so
+vendor/lib64/android.hardware.graphics.composer@2.4.so
 vendor/lib64/android.hardware.identity@1.0-impl.nos.so
 vendor/lib64/android.hardware.keymaster@4.1-impl.nos.so
 vendor/lib64/android.hardware.oemlock-impl.nos.so
@@ -1379,6 +1387,8 @@ vendor/lib64/fake_gxp_telemetry_reader.so
 vendor/lib64/fp_utils.so
 vendor/lib64/gxp_metrics_logger.so
 vendor/lib64/gxp_telemetry_reader.so
+vendor/lib64/hw/android.hardware.graphics.allocator-aidl-impl.so
+vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl.so
 vendor/lib64/hw/audio.platform.aoc.so
 vendor/lib64/hw/audio.primary.zuma.so
 vendor/lib64/hw/sound_trigger.primary.zuma.so
@@ -1397,12 +1407,16 @@ vendor/lib64/libExynosC2Vp8Dec.so
 vendor/lib64/libExynosC2Vp8Enc.so
 vendor/lib64/libExynosC2Vp9Dec.so
 vendor/lib64/libExynosC2Vp9Enc.so
+vendor/lib64/libExynosHWCService.so
+vendor/lib64/libGralloc4Wrapper.so
 vendor/lib64/libOpenCL-pixel.so
 -vendor/lib64/libOpenCL.so
 vendor/lib64/lib_aion_buffer.so
 vendor/lib64/lib_android_keymaster_keymint_utils.so
 vendor/lib64/lib_jpg_encoder.so
 vendor/lib64/lib_reader.so
+vendor/lib64/libacryl.so
+vendor/lib64/libacryl_hdr_plugin.so
 vendor/lib64/libadaptedinfo.so
 vendor/lib64/libamcsextfile.so
 vendor/lib64/libaoc.so
@@ -1410,11 +1424,14 @@ vendor/lib64/libaoctuningdecoder.so
 vendor/lib64/libbw_av1dec.so
 vendor/lib64/libbw_av1enc.so
 vendor/lib64/libc2filterplugin.so
+vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcppbor_external.so
 vendor/lib64/libcppcose_rkp.so
 vendor/lib64/libdarwinn_dba_hal_runtime.so
 vendor/lib64/libdarwinn_hal.so
 vendor/lib64/libdeeptouch.so
+vendor/lib64/libdrm.so
+vendor/lib64/libdrmresource.so
 vendor/lib64/libedgetpu_client.google.so
 vendor/lib64/libedgetpu_tflite_compiler.so
 vendor/lib64/libedgetpu_util.so
@@ -1494,6 +1511,7 @@ vendor/lib64/libsueznanoappclients.so
 vendor/lib64/libtouchflow.so
 vendor/lib64/libusf.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/libvendorgraphicbuffer.so
 vendor/lib64/libwlcproto_aidl-default.so
 vendor/lib64/modem_ml_pw_rpc_gen.so
 vendor/lib64/nos_app_avb.so
