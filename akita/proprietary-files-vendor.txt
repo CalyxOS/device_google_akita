@@ -1381,7 +1381,6 @@ vendor/lib64/gxp_telemetry_reader.so
 vendor/lib64/hw/audio.platform.aoc.so
 vendor/lib64/hw/audio.primary.zuma.so
 vendor/lib64/hw/sound_trigger.primary.zuma.so
-vendor/lib64/hw/vendor.google.whitechapel.audio.audioext@4.0-impl.so
 vendor/lib64/libAlgFx_HiFi3z.so
 vendor/lib64/libAlgFx_HiFi3z231114.so
 vendor/lib64/libExynosC2ComponentStore.so
@@ -1510,7 +1509,6 @@ vendor/lib64/vendor.google.audiometricext@1.0.so
 vendor/lib64/vendor.google.bluetooth_ext-V1-ndk.so
 vendor/lib64/vendor.google.google_battery-V2-ndk.so
 vendor/lib64/vendor.google.radio_ext-V1-ndk.so
-vendor/lib64/vendor.google.whitechapel.audio.audioext@4.0.so
 vendor/lib64/vendor.google.whitechapel.audio.extension-V1-ndk.so
 vendor/lib64/vendor.google.wireless_charger-V1-ndk.so
 vendor/lib64/vendor.radio.base.so
