@@ -46,6 +46,30 @@
       },
       "revId": "8af68fc3e85239fbcb257f99584bac3a646de7a0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c1f5515_a030e71d",
+        "filename": "device-calyx.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-05-16T17:48:41Z",
+      "side": 1,
+      "message": "The build failed for me because I had shusky emptied out like other unrelated device directories that were causing a ton of build errors in my current attempts.\n\nBut yes, you\u0027re right, LOCAL_PATH is just a variable. I see other places are doing `LOCAL_PATH :\u003d $(call my-dir)`. For now just making this akita is fine.",
+      "parentUuid": "4b880708_d5f2ae11",
+      "range": {
+        "startLine": 5,
+        "startChar": 4,
+        "endLine": 5,
+        "endChar": 24
+      },
+      "revId": "8af68fc3e85239fbcb257f99584bac3a646de7a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
