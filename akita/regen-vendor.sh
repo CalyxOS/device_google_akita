@@ -906,7 +906,6 @@ VENDOR_SKIP_FILES=(
     "etc/default-permissions/default-permissions_talkback.xml"
 
     # Shiba
-    "apex/com.google.pixel.camera.hal.apex"
     "apex/com.google.pixel.wifi.ext.apex"
     "lib64/vendor.google.wifi_ext-V1-ndk.so"
     "lib64/egl/libGLES_mali.so"

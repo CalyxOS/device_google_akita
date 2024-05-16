@@ -1,5 +1,6 @@
 # All blobs are extracted from Google factory images for each new ASB
 vendor/apex/com.google.android.widevine.apex
+vendor/apex/com.google.pixel.camera.hal.apex
 vendor/apex/com.google.pixel.euicc.update.apex
 vendor/bin/aocd
 vendor/bin/bipchmgr
