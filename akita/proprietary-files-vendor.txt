@@ -1414,7 +1414,6 @@ vendor/lib64/libcppcose_rkp.so
 vendor/lib64/libdarwinn_dba_hal_runtime.so
 vendor/lib64/libdarwinn_hal.so
 vendor/lib64/libdeeptouch.so
-vendor/lib64/libdisplaycolor.so
 vendor/lib64/libedgetpu_client.google.so
 vendor/lib64/libedgetpu_tflite_compiler.so
 vendor/lib64/libedgetpu_util.so
