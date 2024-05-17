@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "edb7b778_d67f4470",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-05-17T09:32:52Z",
+      "side": 1,
+      "message": "\u003e E native  : E0000 00:00:1715937572.663067    7153 aion.cc:819] Error loading lib_aion_buffer.so dlopen failed: library \"libGralloc4Wrapper.so\" not found: needed by /vendor/lib64/lib_aion_buffer.so in namespace sphal\n\nGoogle Camera crashes without this lib. Untested so far.",
+      "revId": "ff7341560807dbd21801d6807c1d5fbaa07f2934",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
