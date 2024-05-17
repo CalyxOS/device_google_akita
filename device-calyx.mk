@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    libGralloc4Wrapper \
     libcamera2ndk_vendor \
     pixel-power-ext-V1-ndk.vendor
 
