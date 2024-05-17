@@ -22,6 +22,30 @@
       },
       "revId": "741c7d9ab6a91b2be54e1d6714184dbac1e1eb52",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4076a2bd_1ebff556",
+        "filename": "overlay-calyx/packages/apps/Aperture/app/src/main/res/values/config.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-05-17T09:08:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ac6f95b7_a96ba6b7",
+      "range": {
+        "startLine": 27,
+        "startChar": 46,
+        "endLine": 27,
+        "endChar": 56
+      },
+      "revId": "741c7d9ab6a91b2be54e1d6714184dbac1e1eb52",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
