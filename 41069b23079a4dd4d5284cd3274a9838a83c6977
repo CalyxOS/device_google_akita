@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b72ef5a6_d258aa50",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-06-11T20:39:07Z",
+      "side": 1,
+      "message": "TODO: Make sure location works with/without microG",
+      "revId": "41069b23079a4dd4d5284cd3274a9838a83c6977",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
