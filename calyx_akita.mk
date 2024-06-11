@@ -14,9 +14,9 @@ PRODUCT_BRAND := google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=akita \
-    PRIVATE_BUILD_DESC="akita-user 14 UD2A.240505.001 11628456 release-keys"
+    PRIVATE_BUILD_DESC="akita-user 14 AP2A.240605.024 11860263 release-keys"
 
-BUILD_FINGERPRINT := google/akita/akita:14/UD2A.240505.001/11628456:user/release-keys
+BUILD_FINGERPRINT := google/akita/akita:14/AP2A.240605.024/11860263:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
