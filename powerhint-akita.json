@@ -277,7 +277,7 @@
     },
     {
       "Name": "BGUClampMaxBoost",
-      "Path": "/proc/vendor_sched/bg_uclamp_max",
+      "Path": "/proc/vendor_sched/groups/bg/uclamp_max",
       "Values": [
         "130",
         "512"
@@ -287,7 +287,7 @@
     },
     {
       "Name": "Dex2oatUClampMaxBoost",
-      "Path": "/proc/vendor_sched/dex2oat_uclamp_max",
+      "Path": "/proc/vendor_sched/groups/dex2oat/uclamp_max",
       "Values": [
         "-2",
         "615"
@@ -297,16 +297,17 @@
     },
     {
       "Name": "CAMUClampBoost",
-      "Path": "/proc/vendor_sched/cam_uclamp_min",
+      "Path": "/proc/vendor_sched/groups/cam/uclamp_min",
       "Values": [
         "765",
+        "250",
         "0"
       ],
       "ResetOnInit": true
     },
     {
       "Name": "TAUClampBoost",
-      "Path": "/proc/vendor_sched/ta_uclamp_min",
+      "Path": "/proc/vendor_sched/groups/ta/uclamp_min",
       "Values": [
         "765",
         "1"
@@ -315,7 +316,7 @@
     },
     {
       "Name": "FGUClampBoost",
-      "Path": "/proc/vendor_sched/fg_uclamp_min",
+      "Path": "/proc/vendor_sched/groups/fg/uclamp_min",
       "Values": [
         "159",
         "0"
@@ -324,7 +325,7 @@
     },
     {
       "Name": "MLUclampBoost",
-      "Path": "/proc/vendor_sched/nnapi_uclamp_min",
+      "Path": "/proc/vendor_sched/groups/nnapi/uclamp_min",
       "Values": [
           "225",
           "812"
@@ -343,7 +344,7 @@
     },
     {
       "Name": "CDPreferIdle",
-      "Path": "/proc/vendor_sched/cam_prefer_idle",
+      "Path": "/proc/vendor_sched/groups/cam/prefer_idle",
       "Values": [
         "1",
         "0"
@@ -405,7 +406,7 @@
     },
     {
       "Name": "TAPreferHighCap",
-      "Path": "/proc/vendor_sched/ta_prefer_high_cap",
+      "Path": "/proc/vendor_sched/groups/ta/prefer_high_cap",
       "Values": [
         "1",
         "0"
@@ -414,7 +415,7 @@
     },
     {
       "Name": "TAPreferIdle",
-      "Path": "/proc/vendor_sched/ta_prefer_idle",
+      "Path": "/proc/vendor_sched/groups/ta/prefer_idle",
       "Values": [
         "1",
         "0"
@@ -424,7 +425,7 @@
     },
     {
       "Name": "FGPreferIdle",
-      "Path": "/proc/vendor_sched/fg_prefer_idle",
+      "Path": "/proc/vendor_sched/groups/fg/prefer_idle",
       "Values": [
         "1",
         "0"
@@ -434,7 +435,7 @@
     },
     {
       "Name": "CDPreferHighCap",
-      "Path": "/proc/vendor_sched/cam_prefer_high_cap",
+      "Path": "/proc/vendor_sched/groups/cam/prefer_high_cap",
       "Values": [
         "1",
         "0"
@@ -752,7 +753,7 @@
     },
     {
       "Name": "Dex2oatGroup",
-      "Path": "/proc/vendor_sched/dex2oat_ug",
+      "Path": "/proc/vendor_sched/groups/dex2oat/ug",
       "Values": [
         "1",
         "0"
@@ -791,15 +792,6 @@
         "20 80",
         "80 80",
         "20 40"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "SchedLibMaskIn",
-      "Path": "/proc/vendor_sched/sched_lib_mask_in",
-      "Values": [
-        "0x100",
-        "0x0"
       ],
       "ResetOnInit": true
     }
@@ -965,12 +957,6 @@
       "Value": "1"
     },
     {
-      "PowerHint": "LAUNCH",
-      "Node": "SchedLibMaskIn",
-      "Duration": 5000,
-      "Value": "0x100"
-    },
-    {
       "PowerHint": "LAUNCH_EXTEND",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 2000,
@@ -1049,16 +1035,75 @@
       "Value": "1"
     },
     {
-      "PowerHint": "LAUNCH_EXTEND",
-      "Node": "SchedLibMaskIn",
-      "Duration": 5000,
-      "Value": "0x100"
-    },
-    {
       "PowerHint": "LAUNCH_PMU",
       "Node": "PMU_POLL",
       "Duration": 3000,
       "Value": "0"
+    },
+    {
+      "PowerHint": "DISPLAY_CHANGE",
+      "Node": "ReducePreferIdle",
+      "Duration": 5000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "DISPLAY_CHANGE_GPU",
+      "Node": "GPUDvfsPeriod",
+      "Duration": 1000,
+      "Value": "10"
+    },
+    {
+      "PowerHint": "DISPLAY_CHANGE",
+      "Type": "DoHint",
+      "Value": "DISPLAY_CHANGE_GPU"
+    },
+    {
+      "PowerHint": "DISPLAY_CHANGE",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 5000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "DISPLAY_CHANGE",
+      "Node": "CPUMidClusterMaxFreq",
+      "Duration": 5000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "DISPLAY_CHANGE",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 5000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "DISPLAY_CHANGE",
+      "Node": "TAUClampBoost",
+      "Duration": 5000,
+      "Value": "765"
+    },
+    {
+      "PowerHint": "DISPLAY_CHANGE",
+      "Node": "FGUClampBoost",
+      "Duration": 5000,
+      "Value": "159"
+    },
+    {
+      "PowerHint": "DISPLAY_CHANGE",
+      "Node": "MemFreq",
+      "Duration": 5000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "DISPLAY_CHANGE",
+      "Node": "DsuMinFreq",
+      "Duration": 5000,
+      "Value": "1800000"
+    },
+    {
+      "PowerHint": "DISPLAY_CHANGE",
+      "Node": "BCIMinFreq",
+      "Duration": 5000,
+      "Value": "1401000"
     },
     {
       "PowerHint": "CPU_LOAD_RESET",
@@ -1448,6 +1493,12 @@
       "Node": "PowerHALCameraRunning",
       "Duration": 0,
       "Value": "1"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_EXTREME",
+      "Node": "CAMUClampBoost",
+      "Duration": 0,
+      "Value": "250"
     },
     {
       "PowerHint": "CAMERA_STREAMING_EXTREME",
@@ -2160,6 +2211,12 @@
       "Value": "233000"
     },
     {
+      "PowerHint": "CAMERA_ADJUST_CAM_UCLAMP_MIN",
+      "Node": "CAMUClampBoost",
+      "Duration": 0,
+      "Value": "250"
+    },
+    {
       "PowerHint": "FIXED_PERFORMANCE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
@@ -2334,18 +2391,6 @@
       "Value": "1"
     },
     {
-      "PowerHint": "REFRESH_120FPS",
-      "Node": "TAUClampBoost",
-      "Duration": 0,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "REFRESH_60FPS",
-      "Node": "TAUClampBoost",
-      "Duration": 0,
-      "Value": "1"
-    },
-    {
       "PowerHint": "DISPLAY_IDLE",
       "Node": "FGPreferIdle",
       "Duration": 0,
@@ -2463,12 +2508,6 @@
       "Node": "NPITaskPacking",
       "Duration": 0,
       "Value": "1"
-    },
-    {
-      "PowerHint": "GAME",
-      "Node": "SchedLibMaskIn",
-      "Duration": 0,
-      "Value": "0x100"
     },
     {
       "PowerHint": "THERMAL_VIRTUAL-SKIN-HINT_LIGHT",

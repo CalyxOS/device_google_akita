@@ -17,10 +17,6 @@ on init
     chown system system /sys/class/backlight/panel0-backlight/ssc_mode
     chmod 664 /sys/class/backlight/panel0-backlight/ssc_mode
 
-    # adjust PCP high level
-    write /proc/sys/vm/percpu_pagelist_high_fraction 430
-
-
 on early-boot
     # Wait for insmod_sh to finish all common modules
     wait_for_prop vendor.common.modules.ready 1
@@ -77,36 +73,16 @@ on property:vendor.all.modules.ready=1
     chown system system /mnt/vendor/persist/haptics
     chown system system /mnt/vendor/persist/haptics/cs40l26.cal
 
-    chown system system /sys/bus/i2c/devices/6-0043/calibration/f0_stored
-    chown system system /sys/bus/i2c/devices/5-0043/calibration/f0_stored
-    chown system system /sys/bus/i2c/devices/4-0043/calibration/f0_stored
-    chown system system /sys/bus/i2c/devices/6-0043/calibration/q_stored
-    chown system system /sys/bus/i2c/devices/5-0043/calibration/q_stored
-    chown system system /sys/bus/i2c/devices/4-0043/calibration/q_stored
-    chown system system /sys/bus/i2c/devices/6-0043/calibration/redc_stored
-    chown system system /sys/bus/i2c/devices/5-0043/calibration/redc_stored
-    chown system system /sys/bus/i2c/devices/4-0043/calibration/redc_stored
-    chown system system /sys/bus/i2c/devices/6-0043/default/vibe_state
-    chown system system /sys/bus/i2c/devices/5-0043/default/vibe_state
-    chown system system /sys/bus/i2c/devices/4-0043/default/vibe_state
-    chown system system /sys/bus/i2c/devices/6-0043/default/num_waves
-    chown system system /sys/bus/i2c/devices/5-0043/default/num_waves
-    chown system system /sys/bus/i2c/devices/4-0043/default/num_waves
-    chown system system /sys/bus/i2c/devices/6-0043/default/f0_offset
-    chown system system /sys/bus/i2c/devices/5-0043/default/f0_offset
-    chown system system /sys/bus/i2c/devices/4-0043/default/f0_offset
-    chown system system /sys/bus/i2c/devices/6-0043/default/owt_free_space
-    chown system system /sys/bus/i2c/devices/5-0043/default/owt_free_space
-    chown system system /sys/bus/i2c/devices/4-0043/default/owt_free_space
-    chown system system /sys/bus/i2c/devices/6-0043/default/f0_comp_enable
-    chown system system /sys/bus/i2c/devices/5-0043/default/f0_comp_enable
-    chown system system /sys/bus/i2c/devices/4-0043/default/f0_comp_enable
-    chown system system /sys/bus/i2c/devices/6-0043/default/redc_comp_enable
-    chown system system /sys/bus/i2c/devices/5-0043/default/redc_comp_enable
-    chown system system /sys/bus/i2c/devices/4-0043/default/redc_comp_enable
-    chown system system /sys/bus/i2c/devices/6-0043/default/delay_before_stop_playback_us
-    chown system system /sys/bus/i2c/devices/5-0043/default/delay_before_stop_playback_us
-    chown system system /sys/bus/i2c/devices/4-0043/default/delay_before_stop_playback_us
+    chown system system /sys/bus/i2c/devices/0-0043/calibration/f0_stored
+    chown system system /sys/bus/i2c/devices/0-0043/calibration/q_stored
+    chown system system /sys/bus/i2c/devices/0-0043/calibration/redc_stored
+    chown system system /sys/bus/i2c/devices/0-0043/default/vibe_state
+    chown system system /sys/bus/i2c/devices/0-0043/default/num_waves
+    chown system system /sys/bus/i2c/devices/0-0043/default/f0_offset
+    chown system system /sys/bus/i2c/devices/0-0043/default/owt_free_space
+    chown system system /sys/bus/i2c/devices/0-0043/default/f0_comp_enable
+    chown system system /sys/bus/i2c/devices/0-0043/default/redc_comp_enable
+    chown system system /sys/bus/i2c/devices/0-0043/default/delay_before_stop_playback_us
 
     enable vendor.vibrator.cs40l26
 

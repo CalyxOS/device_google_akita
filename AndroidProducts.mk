@@ -21,4 +21,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/calyx_akita.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_akita-userdebug
+    aosp_akita-trunk_staging-userdebug
