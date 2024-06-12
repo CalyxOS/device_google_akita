@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "43fe764e_38328daa",
+        "filename": "akita/overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 304,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-06-12T15:46:44Z",
+      "side": 0,
+      "message": "Even this isn\u0027t set on any other devices",
+      "revId": "3e8803a789e09682fd896636af59fa1c06cd7515",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
