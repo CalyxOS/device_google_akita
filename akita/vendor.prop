@@ -2,8 +2,8 @@
 drm.service.enabled=true
 media.mediadrmservice.enable=true
 
-# Graphics
-ro.gfx.angle.supported=true
+# Fingerprint
+ro.vendor.fingerprint.ta.name=g7a.app
 
 # Radio
 persist.vendor.ril.ecc.use.xml=1
