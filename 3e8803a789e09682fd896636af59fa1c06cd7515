@@ -16,6 +16,24 @@
       "message": "Even this isn\u0027t set on any other devices",
       "revId": "3e8803a789e09682fd896636af59fa1c06cd7515",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "18749afd_1f5d1f22",
+        "filename": "akita/overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 304,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2024-06-12T17:10:19Z",
+      "side": 0,
+      "message": "It\u0027s true by default",
+      "parentUuid": "43fe764e_38328daa",
+      "revId": "3e8803a789e09682fd896636af59fa1c06cd7515",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
