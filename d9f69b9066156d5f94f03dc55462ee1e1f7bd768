@@ -16,6 +16,24 @@
       "message": "sus.\n\nThe file is not present, but\n```\nakita/AP3A.241105.007/factory/akita-ap3a.241105.007/vendor $ rg dolby\netc/media_codecs_c2.xml\n18:    \u003cInclude href\u003d\"media_codecs_dolby_c2.xml\" /\u003e\n```",
       "revId": "d9f69b9066156d5f94f03dc55462ee1e1f7bd768",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d1b8557_7471f956",
+        "filename": "akita/proprietary-files-vendor.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-11-07T01:04:22Z",
+      "side": 0,
+      "message": "Acknowledged",
+      "parentUuid": "5a6aa6af_b99ef1dc",
+      "revId": "d9f69b9066156d5f94f03dc55462ee1e1f7bd768",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
