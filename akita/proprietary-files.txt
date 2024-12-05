@@ -12,6 +12,11 @@ product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
 # Radio
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 
+# system partition
+
+# IMS
+system/bin/oem-iptables-init.sh
+
 # system_ext partition
 
 # Camera extensions
