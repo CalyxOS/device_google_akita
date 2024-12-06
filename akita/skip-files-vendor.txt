@@ -1,6 +1,4 @@
 # Standard build output with vendor image build enabled
-apex/com.android.hardware.biometrics.face.virtual.apex
-apex/com.android.hardware.biometrics.fingerprint.virtual.apex
 apex/com.android.hardware.cas.apex
 bin/[
 bin/acpi
@@ -24,11 +22,13 @@ bin/cksum
 bin/clear
 bin/cmp
 bin/comm
+bin/copy_efs_files_to_data
 bin/cp
 bin/cpio
 bin/cut
 bin/date
 bin/dd
+bin/defrag.f2fs
 bin/devmem
 bin/df
 bin/diff
@@ -36,13 +36,14 @@ bin/dirname
 bin/dmesg
 bin/dos2unix
 bin/du
+bin/dump.f2fs
 bin/dump/dump_aoc
 bin/dump/dump_devfreq
 bin/dump/dump_display
 bin/dump/dump_display_logbuffer
 bin/dump/dump_fingerprint
 bin/dump/dump_gti0.sh
-bin/dump/dump_modem.sh
+bin/dump/dump_modem
 bin/dump/dump_modemlog
 bin/dump/dump_pcie.sh
 bin/dump/dump_perf
@@ -69,6 +70,7 @@ bin/find
 bin/flock
 bin/fmt
 bin/free
+bin/fsck.f2fs
 bin/fsync
 bin/getconf
 bin/getenforce
@@ -95,7 +97,7 @@ bin/hw/android.hardware.drm-service.clearkey
 bin/hw/android.hardware.dumpstate-service
 bin/hw/android.hardware.gatekeeper-service.trusty
 bin/hw/android.hardware.gnss-service
-bin/hw/android.hardware.graphics.allocator-V1-service
+bin/hw/android.hardware.graphics.allocator-V2-service
 bin/hw/android.hardware.health-service.zuma
 bin/hw/android.hardware.health.storage-service.default
 bin/hw/android.hardware.memtrack-service.pixel
@@ -104,7 +106,6 @@ bin/hw/android.hardware.power-service.pixel-libperfmgr
 bin/hw/android.hardware.power.stats-service.pixel
 bin/hw/android.hardware.secure_element-service.thales
 bin/hw/android.hardware.security.keymint-service.rust.trusty
-bin/hw/android.hardware.security.secretkeeper.trusty
 bin/hw/android.hardware.sensors-service.multihal
 bin/hw/android.hardware.thermal-service.pixel
 bin/hw/android.hardware.usb-service
@@ -185,6 +186,7 @@ bin/readlink
 bin/realpath
 bin/rebalance_interrupts-vendor
 bin/renice
+bin/resize.f2fs
 bin/restorecon
 bin/rm
 bin/rmdir
@@ -262,6 +264,8 @@ bin/xargs
 bin/xxd
 bin/yes
 bin/zcat
+boot_otas/boot_ota_16k.zip
+boot_otas/boot_ota_4k.zip
 build.prop
 etc/NOTICE.xml.gz
 etc/a2dp_audio_policy_configuration_7_0.xml
@@ -269,9 +273,9 @@ etc/a2dp_in_audio_policy_configuration_7_0.xml
 etc/aconfig_flags.pb
 etc/aidl/hfp/hfp_codec_capabilities.xml
 etc/aidl/le_audio/aidl_audio_set_configurations.bfbs
-etc/aidl/le_audio/aidl_audio_set_configurations.json
 etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs
-etc/aidl/le_audio/aidl_audio_set_scenarios.json
+etc/aidl/le_audio/aidl_default_audio_set_configurations.json
+etc/aidl/le_audio/aidl_default_audio_set_scenarios.json
 etc/aoc/BLUETOOTH.dat
 etc/aoc/HANDSET.dat
 etc/aoc/HANDSFREE.dat
@@ -306,6 +310,7 @@ etc/boringssl_self_test.no_zygote.rc
 etc/boringssl_self_test.zygote32.rc
 etc/boringssl_self_test.zygote64.rc
 etc/boringssl_self_test.zygote64_32.rc
+etc/bpf/filterPowerSupplyEvents.o
 etc/build_flags.json
 etc/default_volume_tables.xml
 etc/display_colordata_cal0.pb
@@ -316,6 +321,7 @@ etc/display_golden_google-ak3b_cal0.pb
 etc/fs_config_dirs
 etc/fs_config_files
 etc/fstab.efs
+etc/fstab.efs.from_data
 etc/fstab.modem
 etc/fstab.persist
 etc/fstab.zram.2g
@@ -340,13 +346,12 @@ etc/init/android.hardware.boot-service.default-pixel.rc
 etc/init/android.hardware.drm-service.clearkey.rc
 etc/init/android.hardware.dumpstate-service.rc
 etc/init/android.hardware.gatekeeper-service.trusty.rc
-etc/init/android.hardware.graphics.allocator-aidl-service.rc
+etc/init/android.hardware.graphics.allocator2-aidl-service.rc
 etc/init/android.hardware.health-service.zuma.rc
 etc/init/android.hardware.power-service.pixel-libperfmgr.rc
 etc/init/android.hardware.power.stats-service.pixel.rc
 etc/init/android.hardware.secure_element_gto.rc
 etc/init/android.hardware.security.keymint-service.rust.trusty.rc
-etc/init/android.hardware.security.secretkeeper.trusty.rc
 etc/init/android.hardware.sensors-service-multihal.rc
 etc/init/android.hardware.thermal-service.pixel.rc
 etc/init/android.hardware.usb-service.rc
@@ -356,11 +361,13 @@ etc/init/android.hardware.wifi-service.rc
 etc/init/android.hardware.wifi.supplicant-service.rc
 etc/init/atrace_categories.rc
 etc/init/boringssl_self_test.rc
+etc/init/dump_power.rc
 etc/init/gpu_probe.rc
 etc/init/health-storage-default.rc
 etc/init/hostapd.android.rc
 etc/init/hw/init.akita.rc
 etc/init/hw/init.zuma.rc
+etc/init/hw/init.zuma.storage.rc
 etc/init/hw/init.zuma.usb.rc
 etc/init/hwc3-pixel.rc
 etc/init/init.aoc.rc
@@ -457,6 +464,7 @@ etc/permissions/android.software.verified_boot.xml
 etc/permissions/android.software.vulkan.deqp.level.xml
 etc/permissions/aosp_excluded_hardware.xml
 etc/permissions/com.nxp.mifare.xml
+etc/permissions/features_com.android.virt.xml
 etc/permissions/handheld_core_hardware.xml
 etc/permissions/vendor.android.hardware.camera.preview-dis.xml
 etc/powerhint.json
@@ -506,7 +514,6 @@ etc/vintf/manifest/android.hardware.power-service.pixel.xml
 etc/vintf/manifest/android.hardware.power.stats-service.pixel.xml
 etc/vintf/manifest/android.hardware.secure_element_gto.xml
 etc/vintf/manifest/android.hardware.security.keymint-service.rust.trusty.xml
-etc/vintf/manifest/android.hardware.security.secretkeeper.trusty.xml
 etc/vintf/manifest/android.hardware.sensors-multihal.xml
 etc/vintf/manifest/android.hardware.thermal-service.pixel.xml
 etc/vintf/manifest/android.hardware.usb-service.xml
@@ -518,7 +525,8 @@ etc/vintf/manifest/android.hardware.wifi.supplicant.xml
 etc/vintf/manifest/bluetooth_audio.xml
 etc/vintf/manifest/health-storage-default.xml
 etc/vintf/manifest/hwc3-default.xml
-etc/vintf/manifest/manifest_gralloc_aidl.xml
+etc/vintf/manifest/manifest.xml
+etc/vintf/manifest/manifest_gralloc_aidl2.xml
 etc/vintf/manifest/memtrack.xml
 etc/vintf/manifest/nfc-service-default.xml
 etc/vintf/manifest/pixel-display-default.xml
@@ -555,6 +563,7 @@ lib/modules/aoc_unit_test_dev.ko
 lib/modules/aoc_uwb_platform_drv.ko
 lib/modules/aoc_uwb_service_dev.ko
 lib/modules/arm_dsu_pmu.ko
+lib/modules/bbd_pps_gpio.ko
 lib/modules/bcm_dbg.ko
 lib/modules/bcmdhd4383.ko
 lib/modules/cfg80211.ko
@@ -606,7 +615,7 @@ lib64/android.frameworks.sensorservice-V1-ndk.so
 lib64/android.frameworks.sensorservice@1.0.so
 lib64/android.frameworks.stats-V1-ndk.so
 lib64/android.frameworks.stats-V2-ndk.so
-lib64/android.hardware.audio.common-V3-ndk.so
+lib64/android.hardware.audio.common-V4-ndk.so
 lib64/android.hardware.audio.common-util.so
 lib64/android.hardware.audio.common@2.0.so
 lib64/android.hardware.audio.common@5.0.so
@@ -620,7 +629,7 @@ lib64/android.hardware.audio.effect@7.0.so
 lib64/android.hardware.audio@7.0.so
 lib64/android.hardware.audio@7.1-util.so
 lib64/android.hardware.audio@7.1.so
-lib64/android.hardware.bluetooth.audio-V4-ndk.so
+lib64/android.hardware.bluetooth.audio-V5-ndk.so
 lib64/android.hardware.bluetooth.audio-impl.so
 lib64/android.hardware.bluetooth.audio@2.0.so
 lib64/android.hardware.bluetooth.audio@2.1.so
@@ -630,10 +639,10 @@ lib64/android.hardware.boot@1.1.so
 lib64/android.hardware.common-V2-ndk.so
 lib64/android.hardware.common.fmq-V1-ndk.so
 lib64/android.hardware.drm-V1-ndk.so
+lib64/android.hardware.drm.common-V1-ndk.so
 lib64/android.hardware.dumpstate-V1-ndk.so
 lib64/android.hardware.gatekeeper-V1-ndk.so
 lib64/android.hardware.gnss-V3-ndk.so
-lib64/android.hardware.graphics.allocator-V1-ndk.so
 lib64/android.hardware.graphics.allocator-V2-ndk.so
 lib64/android.hardware.graphics.allocator@2.0.so
 lib64/android.hardware.graphics.allocator@3.0.so
@@ -643,7 +652,7 @@ lib64/android.hardware.graphics.common-V5-ndk.so
 lib64/android.hardware.graphics.common@1.0.so
 lib64/android.hardware.graphics.common@1.1.so
 lib64/android.hardware.graphics.common@1.2.so
-lib64/android.hardware.graphics.composer3-V3-ndk.so
+lib64/android.hardware.graphics.composer3-V4-ndk.so
 lib64/android.hardware.graphics.composer@2.1-resources.so
 lib64/android.hardware.graphics.composer@2.1.so
 lib64/android.hardware.graphics.composer@2.2-resources.so
@@ -692,21 +701,20 @@ lib64/android.hardware.usb.gadget@1.0.so
 lib64/android.hardware.vibrator-V2-ndk.so
 lib64/android.hardware.wifi-V2-ndk.so
 lib64/android.hardware.wifi.common-V1-ndk.so
-lib64/android.hardware.wifi.hostapd-V2-ndk.so
-lib64/android.hardware.wifi.supplicant-V3-ndk.so
+lib64/android.hardware.wifi.hostapd-V3-ndk.so
+lib64/android.hardware.wifi.supplicant-V4-ndk.so
 lib64/android.hidl.allocator@1.0.so
 lib64/android.hidl.memory.token@1.0.so
 lib64/android.hidl.memory@1.0.so
 lib64/android.hidl.safe_union@1.0.so
-lib64/android.media.audio.common.types-V3-ndk.so
+lib64/android.media.audio.common.types-V4-ndk.so
 lib64/android.system.keystore2-V1-ndk.so
 lib64/android.system.suspend-V1-ndk.so
 lib64/arm.graphics-V1-ndk.so
-lib64/com.google.hardware.pixel.display-V12-ndk.so
+lib64/com.google.hardware.pixel.display-V13-ndk.so
 lib64/hw/android.hardware.audio.effect@7.0-impl.so
 lib64/hw/android.hardware.audio@7.1-impl.so
 lib64/hw/android.hardware.graphics.allocator-aidl-impl.so
-lib64/hw/android.hardware.graphics.mapper@4.0-impl.so
 lib64/hw/android.hardware.soundtrigger@2.3-impl.so
 lib64/hw/android.hardware.vibrator-impl.cs40l26.so
 lib64/hw/android.hidl.memory@1.0-impl.so
@@ -717,9 +725,11 @@ lib64/hw/audio.usb.default.so
 lib64/hw/audio.usbv2.default.so
 lib64/hw/gralloc.default.so
 lib64/hw/local_time.default.so
+lib64/hw/mapper.pixel.so
 lib64/hw/power.default.so
 lib64/hw/vibrator.default.so
 lib64/libExynosHWCService.so
+lib64/libOpenCL.so
 lib64/libaconfig_storage_read_api_cc.so
 lib64/libacryl.so
 lib64/libacryl_hdr_plugin.so
@@ -748,6 +758,7 @@ lib64/libdumpstateutil.so
 lib64/libeffects.so
 lib64/libeffectsconfig.so
 lib64/libenv_logger.dylib.so
+lib64/libext2_uuid.so
 lib64/libexynosdisplay.so
 lib64/libflatbuffers-cpp.so
 lib64/libfmq.so
@@ -783,6 +794,7 @@ lib64/libreference-ril.so
 lib64/libril.so
 lib64/librilutils.so
 lib64/libsensorndkbridge.so
+lib64/libsparse.so
 lib64/libspeexresampler.so
 lib64/libssl.so
 lib64/libstagefright_foundation.so
@@ -857,8 +869,8 @@ lib/modules
 # or manually added as build targets in device-lineage.mk
 
 # Audio
-lib64/android.hardware.audio.core.sounddose-V2-ndk.so
-lib64/android.hardware.audio.sounddose-V2-ndk.so
+lib64/android.hardware.audio.core.sounddose-V3-ndk.so
+lib64/android.hardware.audio.sounddose-V3-ndk.so
 lib64/libaudio_aidl_conversion_common_ndk.so
 lib64/libaudioroutev2.so
 lib64/libexpat.so
@@ -958,6 +970,11 @@ lib64/libsqlite.so
 lib64/libziparchive.so
 lib64/modem_clock_manager.so
 lib64/modem_clock_manager_impl.so
+
+# Secretkeeper
+bin/hw/android.hardware.security.secretkeeper.trusty
+etc/init/android.hardware.security.secretkeeper.trusty.rc
+etc/vintf/manifest/android.hardware.security.secretkeeper.trusty.xml
 
 # Sensors
 lib64/hw/sensors.dynamic_sensor_hal.so
