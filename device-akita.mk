@@ -260,10 +260,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.bluetooth.vendor.btsnoop=false
 endif
 
-# Enable Bluetooth AutoOn feature
-PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.server.automatic_turn_on=true
-
 ifeq ($(USE_AUDIO_HAL_AIDL),true)
 # AIDL
 
