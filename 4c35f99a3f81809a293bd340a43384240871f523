@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f9186e64_8b6a90c5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2025-02-19T21:44:03Z",
+      "side": 1,
+      "message": "per the commit message at https://cs.android.com/android/_/android/device/google/akita/+/55dcaf387db2a5e2bdf10c49785f3c59ede8c41e - it\u0027s unlikely microG has that, so this should be fine.\n\n\"A noop change by itself, but allows Google to later overlay\n a different GPS engine within GmsCore.\"",
+      "revId": "4c35f99a3f81809a293bd340a43384240871f523",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
