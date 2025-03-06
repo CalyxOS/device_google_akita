@@ -45,7 +45,6 @@ vendor/bin/init.radio.sh
 vendor/bin/liboemservice_proxy_default
 vendor/bin/modem_logging_control
 vendor/bin/modem_ml_svc_sit
-vendor/bin/pixel-experiments-recovery.sh
 vendor/bin/rfsd
 vendor/bin/shared_modem_platform
 vendor/bin/sscoredump
@@ -207,7 +206,6 @@ vendor/etc/init/init.usf.rc
 vendor/etc/init/init.vendor_telephony.rc
 vendor/etc/init/init_dauntless.rc
 vendor/etc/init/pixel-apf-experiment.rc
-vendor/etc/init/pixel-experiments-recovery.rc
 vendor/etc/init/pixel-gnss-default.rc
 vendor/etc/init/pixel-kswapd-experiment.rc
 vendor/etc/init/pktrouter.rc
