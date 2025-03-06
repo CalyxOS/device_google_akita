@@ -175,6 +175,7 @@ bin/paste
 bin/patch
 bin/pgrep
 bin/pidof
+bin/pixel-experiments-recovery.sh
 bin/pixelstats-vendor
 bin/pkill
 bin/pmap
@@ -379,6 +380,9 @@ etc/init/libg3a_gaf.rc
 etc/init/libg3a_ghawb.rc
 etc/init/memtrack.rc
 etc/init/nfc-service-default.rc
+etc/init/pixel-apf-experiment.rc
+etc/init/pixel-experiments-recovery.rc
+etc/init/pixel-kswapd-experiment.rc
 etc/init/pixel-mm-gki.rc
 etc/init/pixel-thermal-symlinks.rc
 etc/init/pixelstats-vendor.zuma.rc
