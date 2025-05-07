@@ -22,8 +22,8 @@ PRODUCT_MODEL := Pixel 8a
 PRODUCT_NAME := calyx_$(DEVICE_CODENAME)
 
 PRODUCT_BUILD_PROP_OVERRIDES := \
-    BuildDesc="akita-user 15 BP1A.250405.007.B1 13240308 release-keys" \
-    BuildFingerprint=google/akita/akita:15/BP1A.250405.007.B1/13240308:user/release-keys \
+    BuildDesc="akita-user 15 BP1A.250505.005.B1 13277630 release-keys" \
+    BuildFingerprint=google/akita/akita:15/BP1A.250505.005.B1/13277630:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
