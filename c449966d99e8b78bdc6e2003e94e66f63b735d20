@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd0cd39c_50f8c64e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2025-06-11T14:46:27Z",
+      "side": 1,
+      "message": "Makes it extract, at least.",
+      "revId": "c449966d99e8b78bdc6e2003e94e66f63b735d20",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
