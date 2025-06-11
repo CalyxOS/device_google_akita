@@ -1073,3 +1073,6 @@ framework/oat/arm64/com.google.android.camera.experimental2023.vdex
 
 # Google
 etc/default-permissions/default-permissions_talkback.xml
+
+# Baklava
+lib64/vendor.google.whitechapel.audio.extension-V4-ndk.so
