@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b717b334_de10d895",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2025-06-17T16:40:55Z",
+      "side": 1,
+      "message": "Am I doing something wrong? If I revert this, it builds fine.\n```\nout/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so: error: Unresolved symbol: AHardwareBuffer_allocate@LIBNATIVEWINDOW\nout/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so: error: Unresolved symbol: AHardwareBuffer_describe@LIBNATIVEWINDOW\nout/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so: error: Unresolved symbol: AHardwareBuffer_lock@LIBNATIVEWINDOW\nout/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so: error: Unresolved symbol: AHardwareBuffer_release@LIBNATIVEWINDOW\nout/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so: error: Unresolved symbol: AHardwareBuffer_unlock@LIBNATIVEWINDOW\nout/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so: note:out/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so: note: Some dependencies might be changed, thus the symbol(s) above cannot be resolved.\nout/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so: note: Please re-build the prebuilt file: \"out/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so\".out/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so: note:out/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so: note: If this is a new prebuilt file and it is designed to have unresolved symbols, add one of the following properties:\nout/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so: note:\nAndroid.bp: allow_undefined_symbols: true,out/soong/.intermediates/vendor/google/akita/libspeechenhancer/android_vendor_arm64_armv8-2a_cortex-a55_shared/libspeechenhancer.so: note:\nAndroid.mk: LOCAL_ALLOW_UNDEFINED_SYMBOLS :\u003d true\n```",
+      "revId": "699189a947cee68ab49dced150c0574f69951ba9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
