@@ -5,4 +5,5 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_akita.mk \
+    $(LOCAL_DIR)/calyx_akita.mk \
     $(LOCAL_DIR)/lineage_akita.mk
