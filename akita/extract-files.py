@@ -48,6 +48,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/hw/android.hardware.usb-service': blob_fixup()
+        .add_needed('libusb_policy_bridge.so'),
     'vendor/etc/init/init.modem_logging_control.rc': blob_fixup()
         .regex_replace(' && property:ro.debuggable=0', ''),
     (
