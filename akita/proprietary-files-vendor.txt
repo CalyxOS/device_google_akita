@@ -57,7 +57,7 @@ vendor/bin/hw/android.hardware.power.stats-service.pixel
 vendor/bin/hw/android.hardware.secure_element-service.uicc
 vendor/bin/hw/android.hardware.security.keymint-service.citadel
 vendor/bin/hw/android.hardware.thermal-service.pixel
-vendor/bin/hw/android.hardware.usb-service
+vendor/bin/hw/android.hardware.usb-service;REQUIRED=init.pixel.usb-policy.rc
 vendor/bin/hw/android.hardware.usb.gadget-service
 vendor/bin/hw/android.hardware.vibrator-service.cs40l26
 vendor/bin/hw/android.hardware.weaver-service.citadel
